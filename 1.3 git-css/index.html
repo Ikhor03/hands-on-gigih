@@ -1,0 +1,62 @@
+<!-- 
+Imagine you’re designing Spotify. Design a page in plain HTML and CSS, that has
+certain sections
+- Show all songs
+- Show your most played songs
+- Able to add songs to your playlist
+You need to design only the CSS and HTML. No need for functionalities for now.
+After that, create a Repo in github and share the repo link to us!
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>song-playlist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Song Playlist</h1>
+    </div>
+
+    <div class="content">
+        <h2>Most Played Songs</h2>
+        <ul class="playlist">
+            <li><a href="https://open.spotify.com/track/MOST_PLAYED_SONG_ID_1">Most Played Song 1</a></li>
+            <li><a href="https://open.spotify.com/track/MOST_PLAYED_SONG_ID_2">Most Played Song 2</a></li>
+            <li><a href="https://open.spotify.com/track/MOST_PLAYED_SONG_ID_3">Most Played Song 3</a></li>
+        </ul>
+
+        <h2>My Playlists</h2>
+        <ul class="playlist">
+            <li>
+                <a href="https://open.spotify.com/track/SONG_ID_1">Song 1</a>
+                <span class="song-details">by Artist 1</span>
+            </li>
+            <li>
+                <a href="https://open.spotify.com/track/SONG_ID_2">Song 2</a>
+                <span class="song-details">by Artist 2</span>
+            </li>
+            <li>
+                <a href="https://open.spotify.com/track/SONG_ID_3">Song 3</a>
+                <span class="song-details">by Artist 3</span>
+            </li>
+            <!-- Add more songs as needed -->
+        </ul>
+
+        <button class="add-button">Add Song</button>
+    </div>
+
+    <script>
+        // Add event listener to the "Add Song" button
+        document.querySelector('.add-button').addEventListener('click', function () {
+
+        });
+    </script>
+</body>
+
+</html>
