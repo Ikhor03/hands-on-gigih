@@ -1,10 +1,16 @@
 //MODEL CUSTOMER
 let customer = [
     {
-        customerId: '',
-        name: "",
-        email: "",
-        balance: 5000000
+        customerId: '1',
+        name: "jhon",
+        email: "sample@mail.com",
+        balance: 500000
+    },
+    {
+        customerId: '2',
+        name: "Doe",
+        email: "sample@mail.com",
+        balance: 400000
     }
 ]
 

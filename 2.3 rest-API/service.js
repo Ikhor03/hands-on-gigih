@@ -1,4 +1,6 @@
-function transfer(sourceId, destinationId, amount) {
+import { createTransaction, getCustomer } from "./model";
+
+export function transfer(sourceId, destinationId, amount) {
     sourceAccount = getCustomer(sourceId);
     destinationAccount = getCustomer(destinationId);
     if (!sourceAccount || !destinationAccount) {

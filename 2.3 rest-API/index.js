@@ -16,7 +16,7 @@ app.post("/customer", (req, res) => {
     const detail = { name, email, balance };
     createCustomer(detail);
 
-    res.status(200).json({ message: "create customer succesfully" }, detail)
+    res.status(200).json({ message: "create customer succesfully", detail })
     try {
         
     } catch (error) {
@@ -27,6 +27,7 @@ app.post("/customer", (req, res) => {
 app.post("/transfer", (req, res) => {
     try {
         const {sourceAccount, destinationAccount, amount} = req.body;
+        console.log("/transfer", req.body)
 
         if(!sourceAccount || !destinationAccount || !amount) {
             throw new Error("uncompleted data input");
